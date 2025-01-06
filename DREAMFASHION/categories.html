@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Dream Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/session.js"></script>
+    <script src="assets/js/categories.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Dream Fashion" class="h-8 w-auto text-red-400">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-gray-900">Produk</a>
+                    <a href="categories.html" class="text-gray-700 hover:text-gray-900">Kategori</a>
+                    
+                    <!-- User Navigation -->
+                    <div id="user-nav"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-white">
+        <!-- Trending Discount Section -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-2xl font-light text-center text-[#C17817] mb-8">TRENDING DISCOUNT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Discount Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/discount1.png" alt="Discount 85%" class="w-full h-48 object-cover">
+                </div>
+                <!-- Discount Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/discount2.png" alt="Special Discount" class="w-full h-48 object-cover">
+                </div>
+                <!-- Discount Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="assets/discount3.png" alt="Black Friday" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Women Categories -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-xl text-[#C17817] mb-6">+Kategori untuk wanita</h2>
+            <div id="women-categories" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Women categories will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Men Categories -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-xl text-[#C17817] mb-6">+Kategori untuk pria</h2>
+            <div id="men-categories" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Men categories will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

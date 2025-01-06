@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dream Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/session.js"></script>
+    <script src="assets/js/index.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Dream Fashion" class="h-8 w-auto text-red-400">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-gray-900">Produk</a>
+                    <a href="categories.html" class="text-gray-700 hover:text-gray-900">Kategori</a>
+                    
+                    <!-- User Navigation -->
+                    <div id="user-nav"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-white">
+        <!-- Hero Section -->
+        <div class="bg-[#f0a8a8]">
+            <div class="max-w-7xl mx-auto px-4 py-12 flex items-center">
+                <div class="w-1/2">
+                    <img src="assets/hero-img.png" alt="Fashion Models" class="rounded-lg w-96 h-96 object-cover">
+                </div>
+                <div class="w-1/2 pl-12">
+                    <h1 class="text-4xl font-bold mb-4">SELAMAT DATANG DI DREAM FASHION</h1>
+                    <p class="text-xl">Platform ini menyediakan berbagai macam tentang fashion pilihan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trending Products Section -->
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-2xl font-bold mb-8">SEDANG TREND HARI INI!</h2>
+            <div id="trending-products" class="grid grid-cols-4 gap-6">
+                <!-- Trending products will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Promo Section -->
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-4 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="assets/promo1.png" alt="Discount Voucher" class="w-full">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="assets/promo2.png" alt="Valentine Special" class="w-full">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="assets/promo3.png" alt="Fashion Promo" class="w-full">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="assets/promo4.png" alt="Diskon 30%" class="w-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Categories -->
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="assets/trend1.png" alt="Fashion Trend 1" class="w-full">
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <img src="assets/trend2.png" alt="Hijab Style" class="w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

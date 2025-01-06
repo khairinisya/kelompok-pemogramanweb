@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Dream Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/session.js"></script>
+    <script src="assets/js/products.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Dream Fashion" class="h-8 w-auto text-red-400">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-gray-900">Produk</a>
+                    <a href="categories.html" class="text-gray-700 hover:text-gray-900">Kategori</a>
+                    
+                    <!-- User Navigation -->
+                    <div id="user-nav"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-white">
+        <!-- Header -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h1 class="text-3xl text-center text-red-400 font-light">SELAMAT DATANG DI CATALOG DREAM FASHION!</h1>
+            <div class="mt-8 text-center">
+                <img src="assets/catalog-header.png" alt="Fashion Collection" class="mx-auto w-1/2">
+                <p class="mt-4 text-gray-600">
+                    <span class="text-red-400">Klik</span> dan lihat koleksi fashion anda.<br>
+                    Lihat di bawah dan periksa <span class="text-red-400">KOLEKSI ANDA</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Product Category -->
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h2 class="text-xl mb-6">Fashion <span class="text-red-400">Wanita</span></h2>
+            
+            <!-- Product Grid -->
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

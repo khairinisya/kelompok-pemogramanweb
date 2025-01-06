@@ -1,0 +1,74 @@
+ody {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #c71585;
+}
+.header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+.main-banner {
+    background-color: #f8c8dc;
+    text-align: center;
+    padding: 40px 20px;
+}
+.main-banner img {
+    width: 200px;
+    border-radius: 15px;
+}
+.main-banner h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+.main-banner p {
+    font-size: 16px;
+    color: #333;
+}
+.trending-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+.trending-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.trending-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.trending-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+.trending-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.trending-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}

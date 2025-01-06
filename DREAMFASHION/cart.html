@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Dream Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/session.js"></script>
+    <script src="assets/js/cart.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="Dream Fashion" class="h-8 w-auto text-red-400">
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-gray-900">Produk</a>
+                    <a href="categories.html" class="text-gray-700 hover:text-gray-900">Kategori</a>
+                    
+                    <!-- User Navigation -->
+                    <div id="user-nav"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-2xl font-semibold mb-8">Shopping Cart</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cart Items -->
+                <div class="md:col-span-2">
+                    <div id="cart-items" class="bg-white rounded-lg shadow-md">
+                        <!-- Cart items will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="md:col-span-1">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h2 class="text-lg font-semibold mb-4">Order Summary</h2>
+                        <div id="cart-summary" class="space-y-4">
+                            <!-- Summary will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
